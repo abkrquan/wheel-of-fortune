@@ -138,9 +138,10 @@ function App() {
           name: findWinner(rotation),
           id: crypto.randomUUID()
         }])
-
-        const audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/extralife.ogg')
-        audio.type = 'audio/ogg'
+        
+        const audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-assets/week7-brrring.m4a')
+        // const audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/extralife.ogg')
+        audio.type = 'audio/m4a'
         audio.volume = 0.175
         await audio.play()
 
