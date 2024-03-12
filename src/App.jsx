@@ -140,7 +140,7 @@ function App() {
         }])
 
         const audio = new Audio('src/assets/sounds/win.mp3')
-        audio.type = 'audio/ogg'
+        audio.type = 'audio/mp3'
         audio.volume = 0.175
         await audio.play()
 
