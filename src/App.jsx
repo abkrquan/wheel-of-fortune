@@ -229,7 +229,7 @@ function App() {
             </div>
 
             <div className='winners'>
-              <h1>All time winners:</h1>
+              <h1>All winners:</h1>
               <ol>
                 {winners.map(winner => {
                   return <li key={winner.id}>{winner.name}</li>
