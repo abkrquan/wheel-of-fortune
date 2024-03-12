@@ -139,8 +139,8 @@ function App() {
           id: crypto.randomUUID()
         }])
 
-        const audio = new Audio('win.mp3')
-        audio.type = 'audio/mp3'
+        const audio = new Audio('http://commondatastorage.googleapis.com/codeskulptor-demos/pyman_assets/extralife.ogg')
+        audio.type = 'audio/ogg'
         audio.volume = 0.175
         await audio.play()
 
