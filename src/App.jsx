@@ -1,16 +1,10 @@
 import { useState, useEffect } from 'react'
 
-import './App.css'
+import './styles/App.css'
 
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 
-const RADtoDEG = (rad) => {
-  return (rad * (180 / Math.PI))
-}
-
-const DEGtoRAD = (deg) => {
-  return (deg * (Math.PI / 180))
-}
+import { RADtoDEG, DEGtoRAD, findQuadrant, HSBToRGB } from './tools/Math';
 
 const HSBToRGB = (h, s, b) => {
   s /= 100;
@@ -153,10 +147,6 @@ function App() {
         debounce = !debounce
       }
     }
-  }
-
-  const findQuadrant = (rotation) => {
-    return Math.floor(rotation / (Math.PI / (list.length / 2)))
   }
 
   const findWinner = (rotation) => {
